@@ -58,7 +58,7 @@ class myHandler(BaseHTTPRequestHandler):
 				try:
 					self.wfile.write('hola mundo')
 				except:
-					self.wfile.write(bytes('paola pillajo', 'UTF-8'))
+					self.wfile.write(bytes('paola alexandra', 'UTF-8'))
 				
 			return
 
