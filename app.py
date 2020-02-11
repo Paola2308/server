@@ -15,6 +15,10 @@ import os
 port = int(os.environ.get("PORT", 5000))	
 PORT_NUMBER = port
 
+def lenOn():
+print('led on')
+def lenOff:
+print('led off')
 
 
 #This class will handles any incoming request from
@@ -23,10 +27,17 @@ class myHandler(BaseHTTPRequestHandler):
 	
 	#Handler for the GET requests
 	def do_GET(self):
+    
 		path=self.path
 		print(self.path.split('/')[-1])
 		nombre=self.path.split('/')[-1]
 		datos=''
+        
+		if (self.path=='/led on');
+		ledOn();
+		if (self.path=='/led off');
+		ledOff();
+        
 		if self.path=="/":  #127.0.0.1:5000/
 			nombre="index.html" #127.0.0.1:5000/index.html
 		try:
